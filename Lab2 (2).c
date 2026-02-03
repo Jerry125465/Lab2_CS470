@@ -67,6 +67,7 @@ int main() {
 
     printf("Waiting for children to finish...\n");
     for (int i = 0; i < 15; i++) {
+        //Waiting for children to finish
         waitpid(childPids[i], &status, 0);
         
         //Reporting status
